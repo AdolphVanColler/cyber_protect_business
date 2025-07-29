@@ -1,119 +1,269 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyber Protect Business Insurance</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; }
-        header { background: #0a3d62; color: #fff; padding: 20px 0; text-align: center; }
-        nav { background: #3c6382; padding: 10px 0; text-align: center; }
-        nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        section { padding: 20px; max-width: 1000px; margin: auto; }
-        h2 { color: #0a3d62; }
-        ul { padding-left: 20px; }
-        .apply-button {
-            display: block;
-            width: 200px;
-            margin: 40px auto;
-            padding: 15px;
-            background-color: #0a3d62;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-        }
-        footer { background: #3c6382; color: #fff; text-align: center; padding: 20px 0; }
-        @media (max-width: 600px) {
-            nav a { display: block; margin: 10px 0; }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cyber Protect Business Insurance</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #0a3d62;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav {
+      background: #3c6382;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section, .container {
+      background: white;
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    h2 {
+      color: #0a3d62;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .apply-button, .submit-button {
+      display: block;
+      width: 200px;
+      margin: 30px auto;
+      padding: 15px;
+      background-color: #0a3d62;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    .submit-button:hover {
+      background-color: #005fa3;
+    }
+    footer {
+      background: #3c6382;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .flex-table {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .flex-col {
+      flex: 1;
+      min-width: 300px;
+      background: #fdfdfd;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .quote-block {
+      max-width: 800px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    input[type=range] {
+      width: 100%;
+      margin-top: 10px;
+    }
+    .output {
+      font-size: 1.2em;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <h1>Cyber Protect Business Insurance</h1>
-    <p>Comprehensive protection for your business against cyber threats</p>
+  <h1>Cyber Protect Business Insurance</h1>
+  <p>Comprehensive protection against cyber threats</p>
 </header>
 
 <nav>
-    <a href="#overview">Overview</a>
-    <a href="#coverage">Coverage</a>
-    <a href="#features">Features</a>
-    <a href="#exclusions">Exclusions</a>
-    <a href="#suitability">Suitability</a>
-    <a href="#contact">Contact</a>
+  <a href="#overview">Overview</a>
+  <a href="#coverage">Coverage & Features</a>
+  <a href="#exclusions">Exclusions & Suitability</a>
+  <a href="#quote">Get a Quote</a>
+  <a href="#contact">Contact</a>
 </nav>
 
 <section id="overview">
-    <h2>Product Overview</h2>
-    <p>Cyber Protect Business Insurance offers end-to-end protection for your business against cyber emergencies including data breaches, hacking, malware, and cyber extortion. Our 24/7 Cyber Emergency Response Team provides expert support to mitigate losses and restore operations quickly.</p>
+  <h2>Product Overview</h2>
+  <p>Cyber Protect Business Insurance offers protection against cyber emergencies including data breaches, hacking, malware, and cyber extortion. Our 24/7 Cyber Emergency Response Team provides expert support to restore operations quickly.</p>
 </section>
 
-<section id="coverage">
+<section id="coverage" class="flex-table">
+  <div class="flex-col">
     <h2>Coverage</h2>
     <ul>
-        <li>Business Interruption Loss</li>
-        <li>Data Restoration Costs</li>
-        <li>Cyber Extortion Costs</li>
-        <li>Multimedia Liability Claims</li>
-        <li>Regulatory Expenses and Penalties</li>
-        <li>PCI Fines and Penalties</li>
-        <li>Funds Protect (fraudulent fund transfers)</li>
-        <li>Emergency Response Costs (forensics, legal, notifications, credit monitoring)</li>
+      <li>Business Interruption Loss</li>
+      <li>Data Restoration Costs</li>
+      <li>Cyber Extortion Costs</li>
+      <li>Multimedia Liability Claims</li>
+      <li>Regulatory Expenses and Penalties</li>
+      <li>PCI Fines and Penalties</li>
+      <li>Funds Protect</li>
+      <li>Emergency Response Costs</li>
     </ul>
-</section>
-
-<section id="features">
+  </div>
+  <div class="flex-col">
     <h2>Key Features</h2>
     <ul>
-        <li>Simple application process</li>
-        <li>Low excess amounts</li>
-        <li>Customisable ratings based on business needs</li>
-        <li>Retroactive cover available</li>
-        <li>Multiple entities covered under one policy</li>
-        <li>Third-party service providers included</li>
+      <li>Simple application process</li>
+      <li>Low excess amounts</li>
+      <li>Customisable ratings</li>
+      <li>Retroactive cover</li>
+      <li>Multi-entity support</li>
+      <li>Third-party providers covered</li>
     </ul>
+  </div>
 </section>
 
-<section id="exclusions">
+<section id="exclusions" class="flex-table">
+  <div class="flex-col">
     <h2>Exclusions</h2>
     <ul>
-        <li>Violation of consumer protection or antitrust laws</li>
-        <li>Intentional or dishonest acts by the business</li>
-        <li>Service interruptions outside business control</li>
-        <li>Government confiscation or damage</li>
-        <li>Physical property damage</li>
-        <li>Unlawful data collection</li>
-        <li>Contractual liabilities and professional service claims</li>
+      <li>Consumer protection or antitrust violations</li>
+      <li>Dishonest acts by the business</li>
+      <li>External service interruptions</li>
+      <li>Government confiscation</li>
+      <li>Physical property damage</li>
+      <li>Unlawful data collection</li>
+      <li>Contractual and professional liabilities</li>
     </ul>
-</section>
-
-<section id="suitability">
+  </div>
+  <div class="flex-col">
     <h2>Who is this for?</h2>
     <ul>
-        <li>SMEs using computer systems</li>
-        <li>Businesses holding sensitive data</li>
-        <li>Online transacting businesses</li>
-        <li>Any business with a bank account</li>
+      <li>SMEs using IT systems</li>
+      <li>Data-sensitive businesses</li>
+      <li>Online businesses</li>
+      <li>Any business with a bank account</li>
     </ul>
+  </div>
 </section>
 
-<section id="contact">
+<div id="quote" class="quote-block">
+  <h2>Cyber Insurance Quote Estimator</h2>
+  <label for="revenue">Company Revenue Band:</label>
+  <input type="range" id="revenue" min="0" max="12" step="1" value="0" oninput="updateQuote()" />
+  <div class="output" id="revenueOutput">R0 - R10 000 000</div>
+
+  <label for="cover">Cover Limit:</label>
+  <input type="range" id="cover" min="0" max="7" step="1" value="0" oninput="updateQuote()" />
+  <div class="output" id="coverOutput">R1M Cover Limit</div>
+
+  <h3>Estimated Quote:</h3>
+  <p>Annual Premium: <span id="annualPremium">-</span></p>
+  <p>Monthly Premium: <span id="monthlyPremium">-</span></p>
+
+  <p><strong>Do you currently have or intend to purchase MDR Complete?</strong></p>
+  <label><input type="radio" name="mdr" id="mdrYes" value="yes" /> Yes</label>
+  <label><input type="radio" name="mdr" id="mdrNo" value="no" checked /> No</label>
+  <p><em>* 20% discount applies with MDR Complete.</em></p>
+
+  <div class="turnover-check">
+    <label><input type="checkbox" name="turnover"> My company's turnover is over R500,000,000</label>
+  </div>
+
+  <a class="submit-button" href="https://tinyurl.com/ASIBestsureCyber" target="_blank">Apply Now</a>
+</div>
+
+<section id="contact" style="max-width:1000px; margin: 20px auto; padding: 20px; background: white; border-radius:8px; display: flex; flex-wrap: wrap; gap: 30px;">
+  <div style="flex:1; min-width: 280px;">
     <h2>Contact Information</h2>
     <p><strong>Phishield UMA (PTY) Ltd</strong></p>
-    <p>+27 (010) 312 5257</p>
-    <p>Email: enquiries@phishield.com</p>
-    <p>Website: <a href="https://www.phishield.com" target="_blank">www.phishield.com</a></p>
+    <p>Phone: +27 (010) 312 5257</p>
+    <p>Email: <a href="mailto:enquiries@phishield.com">enquiries@phishield.com</a></p>
+    <p>Website: <a href="https://www.phishield.com" target="_blank" rel="noopener noreferrer">www.phishield.com</a></p>
+  </div>
+  <div style="flex:1; min-width: 280px;">
+    <h2>Your Broker & Cyber Insurance Specialist</h2>
+    <p><strong>Corné Smit</strong></p>
+    <p>Email: <a href="mailto:corne.smit@asi.co.za">corne.smit@asi.co.za</a></p>
+    <p>Phone: +27 (61) 721-8537</p>
+    <p>Website: <a href="https://www.linkedin.com/in/corn%C3%A9-smit-244386306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">Learn more about me</a></p>
+  </div>
 </section>
 
-<a class="apply-button" href="https://forms.cloud.microsoft/r/YhvnymMsbx?origin=lprLink" target="_blank">Apply Now</a>
 
 <footer>
-    <p>&copy; 2024 Cyber Protect Business Insurance. All rights reserved.</p>
+  <p>&copy; 2024 Cyber Protect Business Insurance. All rights reserved.</p>
 </footer>
+
+<script>
+  function updateQuote() {
+    const revenueBands = [
+      "R0 - R10 000 000", "R10 000 001 - R25 000 000", "R25 000 001 - R50 000 000", "R50 000 001 - R75 000 000",
+      "R75 000 001 - R100 000 000", "R100 000 001 - R150 000 000", "R150 000 001 - R200 000 000", "R200 000 001 - R250 000 000",
+      "R250 000 001 - R300 000 000", "R300 000 001 - R350 000 000", "R350 000 001 - R400 000 000", "R400 000 001 - R450 000 000",
+      "R450 000 001 - R500 000 000"
+    ];
+    const coverLimits = [
+      "R1M Cover Limit", "R2.5M Cover Limit", "R5M Cover Limit", "R7.5M Cover Limit",
+      "R10M Cover Limit", "R15M Cover Limit", "R25M Cover Limit", "R50M Cover Limit"
+    ];
+    const pricingTable = [
+      [6650.40, 7619.40, 9394.20, 13249.80, 16942.20, 22960.20, 25785.60, 36291.60],
+      [9343.20, 11077.20, 14106.60, 18890.40, 22919.40, 29182.20, 32527.80, 46277.40],
+      [11638.20, 14229.00, 20012.40, 25010.40, 29416.80, 34425.00, 43431.60, 56742.60],
+      [13719.00, 18706.80, 23633.40, 27927.60, 32854.20, 39443.40, 49041.60, 64413.00],
+      [15687.60, 20155.20, 25306.20, 31171.20, 36057.00, 43686.60, 55059.60, 70410.60],
+      [18921.00, 23531.40, 27937.80, 34261.80, 38943.60, 48531.60, 60455.40, 79203.00],
+      [21562.80, 26489.40, 31314.00, 37944.00, 43574.40, 54060.00, 72522.00, 105090.60],
+      [24092.40, 29773.80, 36322.20, 42666.60, 48786.60, 59343.60, 82201.80, 123073.20],
+      [27458.40, 33935.40, 39769.80, 47634.00, 51714.00, 65076.00, 87128.40, 132304.20],
+      [30753.00, 38015.40, 44145.60, 51428.40, 56365.20, 68329.80, 91483.80, 135394.80],
+      [33833.40, 41432.40, 47674.80, 56069.40, 60873.60, 72430.20, 96063.60, 139801.20],
+      [36536.40, 44329.20, 51010.20, 59996.40, 65137.20, 76775.40, 100867.80, 146013.00],
+      [38729.40, 46991.40, 54580.20, 64188.60, 69696.60, 81375.60, 105406.80, 150827.40]
+    ];
+    const revenueIndex = parseInt(document.getElementById("revenue").value, 10);
+    const coverIndex = parseInt(document.getElementById("cover").value, 10);
+    const hasMDR = document.getElementById("mdrYes").checked;
+
+    let annualPremium = pricingTable[revenueIndex][coverIndex];
+    if (hasMDR) annualPremium *= 0.8;
+
+    const monthlyPremium = (annualPremium / 12).toFixed(2);
+
+    document.getElementById("revenueOutput").innerText = revenueBands[revenueIndex];
+    document.getElementById("coverOutput").innerText = coverLimits[coverIndex];
+    document.getElementById("annualPremium").innerText = `R${annualPremium.toLocaleString()}`;
+    document.getElementById("monthlyPremium").innerText = `R${monthlyPremium.toLocaleString()}`;
+  }
+  updateQuote();
+</script>
 
 </body>
 </html>
